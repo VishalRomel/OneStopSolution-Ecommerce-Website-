@@ -225,6 +225,8 @@ button {
 /* header section start */
 
 .header_section {
+    position: relative; /* This allows absolute positioning inside */
+
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
@@ -236,16 +238,22 @@ button {
     background-color: transparent !important;
 }
 .logo {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding-bottom: 20px;
+    width: 5%;
+    position: relative; /* Stays fixed at the top-right */
+    top: 10px;
+    left: 50%;
+    padding-top: -1%;
+    z-index: 1000; /* Ensures it's above other elements */
 }
+
+
 .logo_mobile{
-    width: 100%;
-    float: left;
+    position: relative;
+    left: 0%;
+    width: 1%;
+    float: inline-start;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: -20px;
 }
 .mobile_menu{
     width: 100%;
@@ -309,11 +317,11 @@ button {
 }
 .menu_main li a:hover{
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
 }
 .menu_main li.active a{
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
 }
 
 .menu_main li a:hover img{
@@ -372,7 +380,7 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -502,7 +510,7 @@ h1.watchs_taital::after {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -531,7 +539,7 @@ h1.watchs_taital::after {
 }
 .seemore_bt a:hover{
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
 }
 
 /* watchs section end */
@@ -659,7 +667,7 @@ h1.watchs_taital::after {
 
 .seemore_bt_1 a:hover {
     color: #ffffff;
-    background-color: #b60213;
+    background-color: #16d221;
 }
 /* testimonial section end */
 
@@ -840,7 +848,7 @@ textarea#comment::placeholder {
     color: #1c1b1b;
 }
 .copyright_text a:hover{
-    color: #b60213;
+    color: #16d221;
 }
 
 
